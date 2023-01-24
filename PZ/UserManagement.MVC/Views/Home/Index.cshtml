@@ -1,0 +1,18 @@
+﻿@model IEnumerable<UserManagement.MVC.Models.Restaurant>
+@{
+    ViewData["Title"] = "Restaurants";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Restaurants</h1>
+<div class="container">
+    @foreach (var restaurant in Model)
+    {
+    <a asp-controller="Restaurant" asp-action="ViewRestaurant" asp-route-id="@restaurant.Id">
+        <div class="card card-body my-4">
+            <h3>@restaurant.Name</h3>
+            <div class="text-muted">@restaurant.Address</div>
+        </div>
+    </a>
+    }
+</div>

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<UserManagement.MVC.Models.Restaurant>
+@{
+    ViewData["Title"] = "Add Restaurant";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Add Restaurant</h1>
+<form method="post" asp-action="AddRestaurant" asp-controller="Restaurant">
+    <div class="input-group">
+        <input name="restaurantName" class="form-control w-25" placeholder="Restaurant name">
+        <input name="restaurantAddress" class="form-control w-25" placeholder="Address">
+        <span class="input-group-btn">
+            <button type="submit" class="btn btn-info">Add new restaurant</button>
+        </span>
+    </div>
+</form>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Restaurant</th>
+            <th>Address</th>
+            <th>Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var restaurant in Model)
+        {
+            <tr>
+                <td>@restaurant.Name</td>
+                <td>@restaurant.Address</td>
+                <td>
+                    <a class="btn btn-danger" asp-controller="Restaurant" asp-action="DeleteRestaurant" asp-route-id="@restaurant.Id" title="Delete">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

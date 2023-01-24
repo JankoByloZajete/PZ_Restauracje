@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "40d65fd6-f1e8-46be-a8e3-407131736d8f": {
+      "ProjectGuid": "40d65fd6-f1e8-46be-a8e3-407131736d8f",
+      "DisplayName": "UserManagement.MVC",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Różne pliki",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}

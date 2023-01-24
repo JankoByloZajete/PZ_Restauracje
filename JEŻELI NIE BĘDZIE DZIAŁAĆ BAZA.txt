@@ -1,0 +1,8 @@
+W 3 miejscach zmienić na connectionstring na 
+
+Server=(localdb)\\mssqllocaldb;Database=aspnet-UserManagement.MVC-AE2969B3-75AD-4EA0-A236-44AF57519291;Trusted_Connection=True;MultipleActiveResultSets=true
+
+
+appsettings.json
+ReviewDataAccessLayer.cs
+RestaurantDataAccessLayer.cs
